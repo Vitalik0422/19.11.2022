@@ -3,36 +3,103 @@ body {
 }
 header {
     width: 100%;
-    height: 150px;
-    display: flex;
+    height: 400px;
 }
 
-header > div.conteiner_nav {
+/*---------------------Навігація логін------------------------  */
+
+header > section.nav {
     height: 20px;
     width: 100%;
-    background-color: aqua;
+    background-color: #f5f7fa;
     display: flex;
     justify-content: center;
 }
 
-header > div.conteiner_nav > div.menu_nav {
+header > section.nav > div.menu_nav {
     display: flex;
     justify-content: space-between;
     width: 1066px;
 }
 
-header > div.conteiner_nav > div.menu_nav > .content_nav {
+header > section.nav > div.menu_nav > .content_nav {
     display: flex;
+    color: #a3aab7;
 }
 
-header > div.conteiner_nav > div.menu_nav > .content_nav div {
+header > section.nav > div.menu_nav > .content_nav div {
     margin-right: 10px;
 }
 
-header > div.conteiner_nav > div.menu_nav > .login {
+header > section.nav > div.menu_nav > .login {
     display: flex;
+    color: #3f3f40;
 }
 
-header > div.conteiner_nav .menu_nav .login:nth-child(2) {
+header > section.nav >.menu_nav > div.login div.line {
+    margin: 0px 10px 0px 10px;
     border-right: 2px solid gray;
+}
+
+/*---------------------Логотип корзина------------------------  */
+
+header > section.logo_shop {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header > section.logo_shop > div.conteiner_logo_shop{
+    width: 1066px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > section.logo_shop > div.conteiner_logo_shop > div.logo {
+    width: 100px;
+    height: 40px;
+    background: no-repeat url(../img/logo.png);
+}
+
+header > section.logo_shop > div.conteiner_logo_shop > div.shop {
+    display: flex;
+    align-items: center;
+}
+
+header > section.logo_shop > div.conteiner_logo_shop > div.shop > .basket_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: no-repeat url(../img/shop.png);
+    background-size: 100%;
+}
+
+header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket h3 {
+    margin: 0px;
+    font-weight: 900;
+}
+
+header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket h5 {
+    margin: 0px;
+    color: #9ea5b2;
+}
+
+
+/*---------------------Лінія пошуку------------------------  */
+
+header > section.search {
+    width: 100%;
+    height: 50px;
+    background-color: #ffaf1e;
+    display: flex;
+    justify-content: center;
+}
+header > section.search> div.conteiner_search {
+    width: 1066px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
