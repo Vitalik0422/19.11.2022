@@ -1,3 +1,38 @@
 body {
-    background: no-repeat  top url(../img/image.png);
+    display: flex;
+}
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+header > div.conteiner_nav {
+    height: 20px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+header > div.conteiner_nav > div.menu_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1066px;
+}
+
+header > div.conteiner_nav > div.menu_nav > .content_nav {
+    display: flex;
+}
+
+header > div.conteiner_nav > div.menu_nav > .content_nav div {
+    margin-right: 10px;
+}
+
+header > div.conteiner_nav > div.menu_nav > .login {
+    display: flex;
+}
+
+header > div.conteiner_nav .menu_nav .login:nth-child(2) {
+    border-right: 2px solid gray;
 }
