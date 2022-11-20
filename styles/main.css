@@ -297,10 +297,11 @@ main > section.content > div.product_selection > div > h5{
         font-size: 20px;
     }
     
-    
-    
-    
-    
-    
+    main > section.content > div.setings_filter {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
+    main > section.content > div.product_selection {
+        flex-wrap: wrap;
+    }
 }
