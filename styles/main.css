@@ -104,7 +104,6 @@ header > section.search> div.conteiner_search {
 header > section.search> div.conteiner_search > div.search_select {
     width: 100px;
     color: white;
-
 }
 
 header > section.search> div.conteiner_search > form{
@@ -258,4 +257,44 @@ main > section.content > div.product_selection > div > h4{
 main > section.content > div.product_selection > div > h5{
     margin:0px;
     color: #bec3cc;
+}
+
+/* --------------------АДАПТИВ----------------------- */
+@media only screen and (max-width:1200px) {
+    header > section.nav {
+        display: none;
+    }
+
+    header > section.logo_shop {
+      height: 35px;
+    }
+
+    header > section.logo_shop > div.conteiner_logo_shop > div.logo {
+        margin: 0 auto;
+    }
+    header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket {
+        display: none;
+    }
+    
+    header >  section.search > div.conteiner_search {
+        width: 100%;
+    }
+    header > section.search> div.conteiner_search > form .search {
+        width: 70%;
+  
+    }
+    header > section.search> div.conteiner_search > div.search_select {
+        display: none;
+    }
+    main > section.nav_menu {
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+
 }
