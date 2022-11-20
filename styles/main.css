@@ -284,6 +284,10 @@ main > section.content > div.product_selection > div > h5{
         display: none;
     }
 
+    main {
+        width: 100%
+    }
+
     main > section.nav_menu {
         display: none;
     }
@@ -299,6 +303,7 @@ main > section.content > div.product_selection > div > h5{
     main > section.content > div.product_selection {
         flex-wrap: wrap;
     }
+
     main > section.content {
         width: 100%;
     }
