@@ -272,6 +272,7 @@ main > section.content > div.product_selection > div > h5{
     header > section.logo_shop > div.conteiner_logo_shop > div.logo {
         margin: 0 auto;
     }
+
     header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket {
         display: none;
     }
@@ -279,17 +280,22 @@ main > section.content > div.product_selection > div > h5{
     header >  section.search > div.conteiner_search {
         width: 100%;
     }
+
     header > section.search> div.conteiner_search > form .search {
         width: 70%;
-  
     }
+
     header > section.search> div.conteiner_search > div.search_select {
         display: none;
     }
+
     main > section.nav_menu {
         display: none;
     }
-    
+
+    main > section.content > h2 {
+        font-size: 20px;
+    }
     
     
     
