@@ -268,11 +268,6 @@ main > section.content > div.product_selection > div > h5{
     header > section.logo_shop {
       height: 35px;
     }
-
-    header > section.logo_shop > div.conteiner_logo_shop > div.logo {
-        margin: 0 auto;
-    }
-
     header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket {
         display: none;
     }
@@ -298,10 +293,13 @@ main > section.content > div.product_selection > div > h5{
     }
     
     main > section.content > div.setings_filter {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 
     main > section.content > div.product_selection {
         flex-wrap: wrap;
+    }
+    main > section.content {
+        width: 100%;
     }
 }
