@@ -10,35 +10,49 @@
 </head>
 <body>
     <header>
-        <section class="nav">
-            <div class="menu_nav">
-                <div class="content_nav">
-                    <div>Авторозбір</div>
-                    <div>Викуп авто</div>
-                    <div>Доставка і оплата</div>
-                    <div>Контакти</div>
-                </div>
-                <div class="login">
-                    <div>Увійти</div>
-                    <div class="line"></div>
-                    <div>Зареєструватись</div>
+        <section class="header_content">
+            <div>
+                <div>Авторозбір</div>
+                <div>Викуп авто</div>
+                <div>Доставка і оплата</div>
+                <div>Контакти</div>
+            </div>
+            <div>
+                <div>Увійти</div>
+                <div class="line"></div>
+                <div>Зареєструватись</div>
+            </div>
+            <div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+                <div class="menubox">
+                    <div class="menu-item">Інструмент</div>
+                    <div class="menu-item">Колесні диски, покришки</div>
+                    <div class="menu-item">Кузов всередені</div>
+                    <div class="menu-item">Кузов наружні елементи</div>
+                    <div class="menu-item">Кузовне скло</div>
+                    <div class="menu-item">Оливи та тех. рідини</div>
+                    <div class="menu-item">Оптика</div>
+                    <div class="menu-item">Підвіска двигуна/КПП</div>
+                    <div class="menu-item">Підвіска задніх коліс</div>
+                    <div class="menu-item">Підвіска передніх коліс</div>
+                    <div class="menu-item">Рульове керування</div>
+                    <div class="menu-item">Система випуску оброблених газів</div>
                 </div>
             </div>
-        </section>
-        <section class="logo_shop">
-            <div class="conteiner_logo_shop">
+            <div>
                 <div class="logo"></div>
-                <div class="shop">
-                    <div class="basket_img"></div>
-                    <div class="basket">
-                        <h3>В корзині</h3>
-                        <h5>1 товар на 400 грн.</h5>
-                    </div>
+            </div>
+            <div>
+                <div class="basket_img"></div>
+                <div class="basket">
+                    <h3>В корзині</h3>
+                    <h5>1 товар на 400 грн.</h5>
                 </div>
             </div>
-        </section>
-        <section class="search">
-            <div class="conteiner_search">
+            <div>
                 <div class="search_select">По номеру</div>
                 <form> 
                     <input type="text" name="text" class="search" placeholder="Номер запчастини">
@@ -47,6 +61,7 @@
             </div>
         </section>
     </header>
+
     <main>
         <section class="nav_menu">
             <div></div>
@@ -81,71 +96,65 @@
             </div>
             <h5>Ціна: <span>від дешевшого до дорожчого</span></h5>
             <div class="product_selection">
-                <div><img src="./img/parts.png"></img></div>
-                <div>
-                    <h4>Стійка переднього стабілізатора</h4>
-                    <h5>Опора шарова Camry</h5>
-                    <br>
-                    <br>        
-                    <h5><a href="#">900210-АБ-18</a> - Toyota</h5>
+                <div class="product_information">
+                    <div><img src="./img/parts.png"></img></div>
+                    <div>
+                        <div>Стійка переднього стабілізатора</div>
+                        <div>Опора шарова Camry</div>     
+                        <div><a href="#">900210-АБ-18</a> - Toyota</h5></div>
+                    </div>
+                    <div>
+                        430 ГРН.
+                        В наявності
+                    </div>
+                    <div>
+                        <button type="button">В корзину</button>
+                    </div>
                 </div>
-                <div>
-                    <h3>430 ГРН.</h3>
-                    <h5>В наявності</h5>
+                <div class="product_information">
+                    <div><img src="./img/parts.png"></img></div>
+                    <div>
+                        <div>Стійка переднього стабілізатора</div>
+                        <div>Опора шарова Camry</div>     
+                        <div><a href="#">900210-АБ-18</a> - Toyota</h5></div>
+                    </div>
+                    <div>
+                        430 ГРН.
+                        В наявності
+                    </div>
+                    <div>
+                        <button type="button">В корзину</button>
+                    </div>
                 </div>
-                <div>
-                    <button type="button">В корзину</button>
+                <div class="product_information">
+                    <div><img src="./img/parts.png"></img></div>
+                    <div>
+                        <div>Стійка переднього стабілізатора</div>
+                        <div>Опора шарова Camry</div>     
+                        <div><a href="#">900210-АБ-18</a> - Toyota</h5></div>
+                    </div>
+                    <div>
+                        430 ГРН.
+                        В наявності
+                    </div>
+                    <div>
+                        <button type="button">В корзину</button>
+                    </div>
                 </div>
-            </div>
-            <div class="product_selection">
-                <div><img src="./img/parts.png"></img></div>
-                <div>
-                    <h4>Стійка переднього стабілізатора</h4>
-                    <h5>Опора шарова Camry</h5>
-                    <br>
-                    <br>        
-                    <h5><a href="#">900210-АБ-18</a> - Toyota</h5>
-                </div>
-                <div>
-                    <h3>430 ГРН.</h3>
-                    <h5>В наявності</h5>
-                </div>
-                <div>
-                    <button type="button">В корзину</button>
-                </div>
-            </div>
-            <div class="product_selection">
-                <div><img src="./img/parts.png"></img></div>
-                <div>
-                    <h4>Стійка переднього стабілізатора</h4>
-                    <h5>Опора шарова Camry</h5>
-                    <br>
-                    <br>        
-                    <h5><a href="#">900210-АБ-18</a> - Toyota</h5>
-                </div>
-                <div>
-                    <h3>430 ГРН.</h3>
-                    <h5>В наявності</h5>
-                </div>
-                <div>
-                    <button type="button">В корзину</button>
-                </div>
-            </div>
-            <div class="product_selection">
-                <div><img src="./img/parts.png"></img></div>
-                <div>
-                    <h4>Стійка переднього стабілізатора</h4>
-                    <h5>Опора шарова Camry</h5>
-                    <br>
-                    <br>        
-                    <h5><a href="#">900210-АБ-18</a> - Toyota</h5>
-                </div>
-                <div>
-                    <h3>430 ГРН.</h3>
-                    <h5>В наявності</h5>
-                </div>
-                <div>
-                    <button type="button">В корзину</button>
+                <div class="product_information">
+                    <div><img src="./img/parts.png"></img></div>
+                    <div>
+                        <div>Стійка переднього стабілізатора</div>
+                        <div>Опора шарова Camry</div>     
+                        <div><a href="#">900210-АБ-18</a> - Toyota</h5></div>
+                    </div>
+                    <div>
+                        430 ГРН.
+                        В наявності
+                    </div>
+                    <div>
+                        <button type="button">В корзину</button>
+                    </div>
                 </div>
             </div>
         </section>

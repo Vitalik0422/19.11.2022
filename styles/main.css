@@ -1,126 +1,111 @@
 header {
     width: 100%;
-    height: auto;
+    height: 140px;
+    background: linear-gradient(180deg,#f5f7fa 0px 20px, white 20px 90px, #ffaf1e 90px 140px);
 }
 
-/*---------------------Навігація логін------------------------  */
-
-header > section.nav {
-    height: 20px;
-    width: 100%;
-    background-color: #f5f7fa;
-    display: flex;
-    justify-content: center;
-}
-
-header > section.nav > div.menu_nav {
-    display: flex;
-    justify-content: space-between;
+header > section.header_content {
+    margin: 0 auto;
     width: 1066px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 70px 50px;
+    align-items: center;
 }
 
-header > section.nav > div.menu_nav > .content_nav {
+header > section.header_content > div:nth-child(1) {
     display: flex;
     color: #a3aab7;
 }
 
-header > section.nav > div.menu_nav > .content_nav div {
+header > section.header_content > div:nth-child(1) > div  {
     margin-right: 10px;
 }
-
-header > section.nav > div.menu_nav > .login {
+ header > section.header_content > div:nth-child(2n) {
     display: flex;
+    justify-content: flex-end;
+}
+
+header > section.header_content > div:nth-child(2) {
     color: #3f3f40;
 }
 
-header > section.nav >.menu_nav > div.login div.line {
+header > section.header_content > div:nth-child(2) > div.line {
     margin: 0px 10px 0px 10px;
     border-right: 2px solid gray;
 }
 
+
 /*---------------------Логотип корзина------------------------  */
 
-header > section.logo_shop {
-    height: 70px;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
+header > section.header_content > div:nth-child(3) {
+    display: none;
 }
 
-header > section.logo_shop > div.conteiner_logo_shop{
-    width: 1066px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header > section.header_content > div:nth-child(4){
+    justify-content: flex-start;
 }
 
-header > section.logo_shop > div.conteiner_logo_shop > div.logo {
+header > section.header_content > div:nth-child(4) > div.logo {
     width: 100px;
     height: 40px;
     background: no-repeat url(../img/logo.png);
+    background-position: top;
 }
 
-header > section.logo_shop > div.conteiner_logo_shop > div.shop {
+header > section.header_content > div:nth-child(5) {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
-header > section.logo_shop > div.conteiner_logo_shop > div.shop > .basket_img {
-    width: 20px;
-    height: 20px;
+header > section.header_content > div:nth-child(5) > div.basket_img {
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
     background: no-repeat url(../img/shop.png);
     background-size: 100%;
 }
 
-header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket h3 {
-    margin: 0px;
+header > section.header_content > div:nth-child(5) > div.basket > h3 {
     font-weight: 900;
-}
-
-header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket h5 {
     margin: 0px;
+}
+
+header > section.header_content > div:nth-child(5) > div.basket > h5 {
     color: #9ea5b2;
+    margin: 0px;
 }
 
+/* --------------------Форма пошуку---------------------- */
 
-/*---------------------Лінія пошуку------------------------  */
-
-header > section.search {
-    width: 100%;
-    height: 50px;
-    background-color: #ffaf1e;
-    display: flex;
-    justify-content: center;
-}
-header > section.search> div.conteiner_search {
-    width: 1066px;
+header > section.header_content > div:nth-child(6) {
+    grid-column: 1/3;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header > section.search> div.conteiner_search > div.search_select {
+header > section.header_content > div:nth-child(6) > div.search_select {
     width: 100px;
     color: white;
 }
 
-header > section.search> div.conteiner_search > form{
+header > section.header_content > div:nth-child(6) > form{
     display: flex;
     flex-wrap: nowrap;
 }
 
-header > section.search> div.conteiner_search > form .search {
+header > section.header_content > div:nth-child(6) form .search {
     width: 600px;
     height: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
     border: 1px solid white;
     border-radius: 3px;
     color: #bdc2c6;
 }
 
-header > section.search> div.conteiner_search > form .submit {
+header > section.header_content > div:nth-child(6) form .submit {
     width: 100px;
     height: 34px;
     margin-left: 20px;
@@ -215,28 +200,28 @@ main > section.content > h5 > span {
 
 main > section.content > div.product_selection {
     display: grid;
-    grid-template-columns:1fr 3fr 1fr 2fr;
-    grid-auto-rows: 100px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+}
+
+main > section.content > div.product_selection > div.product_information {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     border-top: 1px solid #eef0f4;
+    border-bottom: 1px solid #eef0f4;
 }
 
-main > section.content > div.product_selection > div:nth-child(1) {
-    display: flex;
-    align-items: center;
+main > section.content > div.product_selection > div.product_information > div {
+    text-align: center;
 }
-main > section.content > div.product_selection > div:nth-child(3) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-main > section.content > div.product_selection > div:nth-child(4) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+main > section.content > div.product_selection > div.product_information > div:nth-child(2) {
+    display:grid;
+    grid-template-columns: 1fr;
 }
 
-main > section.content > div.product_selection > div:nth-child(4) > button{
+main > section.content > div.product_selection > div.product_information >div:nth-child(4) > button{
+    margin: 21px;
     width: 100px;
     height: 35px;
     background-color: orange;
@@ -246,65 +231,194 @@ main > section.content > div.product_selection > div:nth-child(4) > button{
     color: white;
 }
 
-main > section.content > div.product_selection > div > h3{
-    margin:0px;
-}
-
-main > section.content > div.product_selection > div > h4{
-    margin:0px;
-}
-
-main > section.content > div.product_selection > div > h5{
-    margin:0px;
-    color: #bec3cc;
-}
-
 /* --------------------АДАПТИВ----------------------- */
 @media only screen and (max-width:1200px) {
-    header > section.nav {
+    header {
+        background: #ffaf1e;
+        height: 50px;
+    }
+    header > section.header_content{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-rows: 50px;
+    }
+
+    header > section.header_content > div {
+        justify-content: center;
+    }
+
+    header > section.header_content >div:nth-child(1){
         display: none;
     }
 
-    header > section.logo_shop {
-      height: 35px;
-    }
-    header > section.logo_shop > div.conteiner_logo_shop > div.shop > div.basket {
+    header > section.header_content >div:nth-child(2){
         display: none;
+    }
+
+    header > section.header_content >div:nth-child(3) {
+        display: flex;
+    }
+    /* ----------------------бУргер меню------------------------ */
+
+    .menu-btn{
+        display: flex;
+        align-items: center;
+    
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
     }
     
-    header >  section.search > div.conteiner_search {
-        width: 100%;
+    .menu-btn > span, .menu-btn > span::before, .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 26px ;
+    height: 2px;
+    background-color: black;
+    transition-duration: .10s;
+    }
+    .menu-btn > span::before {
+    content: '';
+    top: -8px;
+    }
+    .menu-btn > span::after {
+    content: '';
+    top: 8px;
+    }
+    
+    .menubox{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: 0.25s;
+    }
+    
+    .menu-item {
+    display: block;
+    padding: 12px 24px;
+    border-top: 1px solid hsl(223, 8%, 82%);
+    border-bottom: 1px solid hsl(223, 8%, 82%);
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    }
+    .menu-item:hover {
+    background-color: #CFD8DC;
+    }
+    #menu-toggle{
+    opacity: 0;
+    }
+    
+    #menu-toggle:checked ~ .menu-btn > span{
+    transform: rotate(45deg);
+
+    }
+    #menu-toggle:checked ~ .menu-btn > span::before{
+    top: 0;
+    transform: rotate(0deg);
+    }
+    #menu-toggle:checked ~ .menu-btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+
+    }
+    #menu-toggle:checked ~ .menubox{
+    visibility: visible;
+    left: 0;
     }
 
-    header > section.search> div.conteiner_search > form .search {
-        width: 70%;
+    header > section.header_content >div:nth-child(4) > div.logo {
+        background-position: center;
+        background-size: 5em;
+
+    } 
+
+    header > section.header_content > div:nth-child(5) {
+        justify-content: center;
+    }
+    header > section.header_content > div:nth-child(5) > div.basket_img {
+        width: 30px;
+        height: 30px;
     }
 
-    header > section.search> div.conteiner_search > div.search_select {
+    header > section.header_content > div:nth-child(5) > div.basket {
         display: none;
     }
 
+    header > section.header_content >div:nth-child(6) {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+    header > section.header_content > div:nth-child(6) > div.search_select, .submit {
+        display: none;
+    }
+
+    header > section.header_content > div:nth-child(6) form {
+        width: 100%;
+    }
+    header > section.header_content > div:nth-child(6) form .search {
+        width: 100%;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    /* ----------основне меню адаптив-------------- */
+
     main {
-        width: 100%
+        width: 100%;
     }
 
     main > section.nav_menu {
         display: none;
     }
 
+    main > section.content{
+        width: 100%;
+        margin: 0 5px;
+    }
+
     main > section.content > h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
     
     main > section.content > div.setings_filter {
         grid-template-columns: repeat(5, 1fr);
     }
-
     main > section.content > div.product_selection {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: auto;
+        grid-gap:5px;
+        justify-content: center;
+    }
+    main > section.content > div.product_selection > div.product_information {
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        border: 1px solid blue;
     }
 
-    main > section.content {
+    main > section.content > div.product_selection > div.product_information >div:nth-child(1) > img {
         width: 100%;
+        max-width: 300px;
     }
+    main > section.content > div.product_selection > div.product_information > div{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
 }
+  
